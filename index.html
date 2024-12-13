@@ -12,8 +12,23 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <style>
-        a {
-            text-decoration: none;
+
+        #Home_Main {
+            background-image: url(./Multi/main.jpg);
+            background-attachment: fixed;
+        }
+
+        #About_Main {
+            background-image: url(./Multi/about-section.jpg);
+            background-attachment: local;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #Book {
+            background-image: url(./Multi/book-table-img.jpg);
+            background-attachment: fixed;
+            background-size: cover;
         }
 
         #Book input {
@@ -21,12 +36,6 @@
             outline-style: none;
             border: 3px solid white;
             color: white;
-        }
-
-        i {
-            color: #b6b9be;
-            font-size: 14px;
-            margin-right: 15px;
         }
 
         #Book input:focus {
@@ -50,8 +59,6 @@
             border-top-color: red;
             position: relative;
             z-index: 1;
-
-
         }
 
         #Emp1::before {
@@ -97,81 +104,105 @@
             color: white;
             border: 1px solid gray;
         }
+
+        #glassy1 {
+            padding: 200px 0px;
+            background-color: rgba(26, 25, 25, 0.8);
+        }
+
+        #glassy2 {
+            background-color: rgba(51, 49, 49, 0.8);
+        }
+
+        i {
+            color: #b6b9be;
+            font-size: 14px;
+            margin-right: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .fa-heart{
+            color: #ff0000;
+        }
+
     </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" class="w-100 bg-dark">
 
 
-    <div class="fw-bold d-block"
-        style="background-image: url(./Multi/main.jpg);background-attachment: fixed;padding: 200px 0px;">
-        <nav class="navbar navbar-expand-lg">
-            <div class="py-4 bg-dark w-100 fixed-top navbar-dark ">
-                <button class="navbar-toggler fixed-top-0 mx-3" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fs-1 border border-0"></span>
-                </button>
+    <div class="fw-bold d-block" id="Home_Main">
+        <div class="w-100 h-100" id="glassy1">
+            <nav class="navbar navbar-expand-lg">
+                <div class="py-4 bg-dark w-100 fixed-top navbar-dark ">
+                    <button class="navbar-toggler fixed-top-0 mx-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fs-1 border border-0"></span>
+                    </button>
 
-                <nav class="navbar navbar-expand-lg collapse navbar-collapse navbar-dark fixed-top bg-dark py-4 py-xl-2"
-                    id="navbar">
-                    <div class="container-fluid row w-100 m-0 p-0" id="scrollImage">
-                        <ul class="navbar-nav col-12 col-lg-3 d-flex justify-content-around ">
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#About">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Gallery">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Book">Book-Table</a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav col-12 col-lg-6 d-flex justify-content-around text-danger">
-                            <li class="nav-item ">
-                                <center> <img src="./Multi/logo.svg" alt="" class="w-25 mt-2 d-none d-xl-block">
-                                </center>
-                                <h1 class="d-none d-lg-block d-xl-none"> Food Hut</h1>
-                                <img src="" alt="">
-                                <button class="navbar-toggler d-block  d-lg-none" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon border border-0"></span>
-                                </button>
+                    <nav class="navbar navbar-expand-lg collapse navbar-collapse navbar-dark fixed-top bg-dark py-4 py-xl-2"
+                        id="navbar">
+                        <div class="container-fluid row w-100 m-0 p-0" id="scrollImage">
+                            <ul class="navbar-nav col-12 col-lg-3 d-flex justify-content-around ">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#Home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#About">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#Gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#Book">Book-Table</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav col-12 col-lg-6 d-flex justify-content-around text-danger">
+                                <li class="nav-item ">
+                                    <center> <img src="./Multi/logo.svg" alt="" class="w-25 mt-2 d-none d-xl-block">
+                                    </center>
+                                    <h1 class="d-none d-lg-block d-xl-none"> Food Hut</h1>
+                                    <img src="" alt="">
+                                    <button class="navbar-toggler d-block  d-lg-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon border border-0"></span>
+                                    </button>
 
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav col-12 col-lg-3 d-flex justify-content-around ">
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Blog">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Reviews">Reviews</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="#Contact">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn bg-danger text-light" href="">Components</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav col-12 col-lg-3 d-flex justify-content-around ">
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#Blog">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#Reviews">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light" href="#Contact">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn bg-danger text-light" href="">Components</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+            <div class="text-center py-5  text-white " id="Home">
+                <h1 class="display-1  mb-3 mt-5 h-6 fw-bold opacity-none">Food Hut</h1>
+                <h2 class="display-4 mb-5 fw-bold">Always fresh & Delightful</h2>
+                <a href="#Gallery" class="btn btn-lg btn-danger p-3 px-4 mb-5">View Our gallery</a>
             </div>
-        </nav>
-        <div class="text-center py-5  text-white " id="Home">
-            <h1 class="display-1  mb-3 mt-5 h-6 fw-bold opacity-none">Food Hut</h1>
-            <h2 class="display-4 mb-5 fw-bold">Always fresh & Delightful</h2>
-            <a href="#Gallery" class="btn btn-lg btn-danger p-3 px-4 mb-5">View Our gallery</a>
         </div>
     </div>
     <div class="text-light row w-100 container-fluid p-0 m-0" id="About">
         <div class="col-lg-6 d-none d-lg-block p-0">
-            <div style="background-image: url(./Multi/about-section.jpg);background-attachment: local;background-repeat: no-repeat;background-size: cover;"
-                class="p-0 m-0 h-100 col-lg-12">
+            <div id="About_Main" class="p-0 m-0 h-100 col-lg-12">
             </div>
         </div>
         <div class="col-lg-6 col-12 m-0 p-0">
@@ -222,29 +253,31 @@
         </div>
 
     </div>
-    <div class="py-5 float-start w-100 row m-0 p-0 container-fluid"
-        style="background-image: url(./Multi/book-table-img.jpg);background-attachment: fixed;" id="Book">
-        <h1 class="display-1 text-center mt-5 fw-bold text-light pb-5">BOOK A TABLE</h1>
-        <form action="" class="container-fluid">
-            <div class="row g-3">
-                <div class="col-12 col-sm-6 col-md-3">
-                    <input type="email" name="" id="" class="w-100  p-3" placeholder="EMAIL">
+    <div class=" float-start w-100 row m-0 p-0 container-fluid" id="Book">
+        <div id="glassy2" class="py-5">
+            <h1 class="display-1 text-center mt-5 fw-bold text-light pb-5">BOOK A TABLE</h1>
+            <form action="" class="container-fluid">
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <input type="email" name="" id="" class="w-100  p-3" placeholder="EMAIL">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <input type="number" name="" id="" class="w-100  p-3" placeholder="NUMBER OF GUESTS">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <input type="time" name="" id="" class="w-100  p-3">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <input type="date" name="" id="" class="w-100  p-3">
+                    </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <input type="number" name="" id="" class="w-100  p-3" placeholder="NUMBER OF GUESTS">
+            </form>
+            <center>
+                <div class="btn btn-lg mx-auto mt-5 mb-5 bg-danger text-light text-center p-3 px-4 rounded-1">FIND TABLE
                 </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <input type="time" name="" id="" class="w-100  p-3">
-                </div>
-                <div class="col-12 col-sm-6 col-md-3">
-                    <input type="date" name="" id="" class="w-100  p-3">
-                </div>
-            </div>
-        </form>
-        <center>
-            <div class="btn btn-lg mx-auto mt-5 mb-5 bg-danger text-light text-center p-3 px-4 rounded-1">FIND TABLE
-            </div>
-        </center>
+            </center>
+        </div>
+
     </div>
     <div class="w-100 float-start mb-5" id="Blog">
         <div class="w-100 float-start">
@@ -344,7 +377,7 @@
         </div>
 
     </div>
-    <div class=" text-light w-100 container-fluid float-start pb-5" id="Reviews">
+    <div class=" text-light w-100 container-fluid float-start py-5" id="Reviews">
         <h1 class="display-1 text-center">REVIEWS</h1>
         <div class="row g-4">
             <div class="col-12 col-md-4">
@@ -386,8 +419,8 @@
             <div class="p-0 m-0 h-100 col-lg-12">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114678.69805424714!2d77.28141053279151!3d11.108739502246513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907b0424d75b9%3A0x4750551698a91687!2sTiruppur%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1733850574619!5m2!1sen!2sin"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" class="m-0 p-0"></iframe>
+                    width="100%" height="100%"  allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="m-0 p-0 border border-0"></iframe>
             </div>
         </div>
         <div class="col-md-6 col-12 m-0 p-5">
@@ -433,8 +466,7 @@
         </div>
     </div>
     <div class="p-2 mb-0 text-light text-center">
-        <p>Copyright 2024 made with <i class="fa-regular fa-heart mx-1 mt-4"
-                style="color: #ff0000;"></i><spanclass="text-danger">By DevCRUD</span></p>
+        <p>Copyright 2024 made with <i class="fa-regular fa-heart mx-1 mt-4"></i><spanclass="text-danger">By DevCRUD</span></p>
     </div>
 
 
