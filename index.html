@@ -12,6 +12,9 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <style>
+        .navbar-nav .nav-link.active {
+            color: rgb(228, 47, 47);
+        }
 
         #Home_Main {
             background-image: url(./Multi/main.jpg);
@@ -124,14 +127,13 @@
             text-decoration: none;
         }
 
-        .fa-heart{
+        .fa-heart {
             color: #ff0000;
         }
-
     </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" class="w-100 bg-dark">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" class="w-100 bg-dark">
 
 
     <div class="fw-bold d-block" id="Home_Main">
@@ -149,16 +151,16 @@
                         <div class="container-fluid row w-100 m-0 p-0" id="scrollImage">
                             <ul class="navbar-nav col-12 col-lg-3 d-flex justify-content-around ">
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#Home">Home</a>
+                                    <a class="nav-link " href="#Home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#About">About</a>
+                                    <a class="nav-link " href="#About">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#Gallery">Gallery</a>
+                                    <a class="nav-link " href="#Gallery">Gallery</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#Book">Book-Table</a>
+                                    <a class="nav-link " href="#Book">Book-Table</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav col-12 col-lg-6 d-flex justify-content-around text-danger">
@@ -177,13 +179,13 @@
                             </ul>
                             <ul class="navbar-nav col-12 col-lg-3 d-flex justify-content-around ">
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#Blog">Blog</a>
+                                    <a class="nav-link" href="#Blog">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#Reviews">Reviews</a>
+                                    <a class="nav-link" href="#Reviews">Reviews</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-light" href="#Contact">Contact Us</a>
+                                    <a class="nav-link" href="#Contact">Contact Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link btn bg-danger text-light" href="">Components</a>
@@ -419,7 +421,7 @@
             <div class="p-0 m-0 h-100 col-lg-12">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114678.69805424714!2d77.28141053279151!3d11.108739502246513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907b0424d75b9%3A0x4750551698a91687!2sTiruppur%2C%20Tamil%20Nadu!5e1!3m2!1sen!2sin!4v1733850574619!5m2!1sen!2sin"
-                    width="100%" height="100%"  allowfullscreen="" loading="lazy"
+                    width="100%" height="100%" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" class="m-0 p-0 border border-0"></iframe>
             </div>
         </div>
@@ -466,7 +468,8 @@
         </div>
     </div>
     <div class="p-2 mb-0 text-light text-center">
-        <p>Copyright 2024 made with <i class="fa-regular fa-heart mx-1 mt-4"></i><spanclass="text-danger">By DevCRUD</span></p>
+        <p>Copyright 2024 made with <i class="fa-regular fa-heart mx-1 mt-4"></i><spanclass="text-danger">By
+                DevCRUD</span></p>
     </div>
 
 
